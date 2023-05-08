@@ -1,0 +1,187 @@
+
+
+*{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+    width: auto;
+	z-index: -1000;
+	background-size: cover; 
+    
+}
+p.link{
+    text-align: center;
+}
+.login,.cadastro{
+    padding: 50px;
+   border:0;
+   min-width: 300px;
+   border-radius: 70px;  
+   transition-duration: 2s;
+   box-shadow: 10px 10px 15px 10px rgb(99, 70, 108);
+   background-color: rgb(255, 255, 255);
+  
+}
+
+.login:hover,.cadastro:hover{
+    padding: 50px;
+   box-shadow: 10px 10px 15px 8px rgb(94, 55, 104);
+   background-color: rgb(255, 255, 255);
+  
+}
+
+.login h1,.cadastro h1{
+   text-align: center;
+   color: rgb(140, 90, 132);
+   font-size: xxx-large;
+   
+}
+.cadastro{
+    border-radius: 10px;
+}
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font-size: medium;
+    padding: 15px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    width: 90%;
+    transition-duration: 1s;
+   
+}
+.input:focus{
+    border: none;
+    border-bottom: solid 2px rgb(167, 167, 167);
+    background-color: rgb(229, 226, 232);
+    border-radius: 20px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+   
+}
+input::placeholder {
+    color: rgb(101, 101, 101);
+    font-size: medium;
+  }
+.btn-form{
+    color: rgb(255, 255, 255);
+    min-width:max-content;
+    transition-duration: 0s;
+    font-size: larger;
+    background-color: rgb(136, 96, 129);
+    margin-top: 40px;
+    padding: 8%;
+    border-radius: 100px;
+    width: 50%;
+    font-weight: 00;
+}
+.btn-form:hover{
+    background-color: rgb(108, 88, 108);
+}
+
+a{
+    color: black;
+}
+
+
+
+.conteiner{
+    display: flex;
+    /* organiza os itens na linha horizontal ou vertical, row deifine q o eixo principal é na horizontal*/
+    flex-direction: row-reverse;
+    /*justify-content alinhamento no eixo principal, pode centralizar na horizontal
+    valores: space-around space-evenly e space-between deixa espacos entre itens, center, */
+    justify-content: center;
+    /*configura o contrario do eixo perpendicular, tbm tem align-content*/
+    align-items: center;
+    height: 95vh;
+    
+
+}
+
+
+
+
+
+
+
+
+/* Efeito ao clicar no botão ( Ir para Login ) 
+#paracadastro:target ~ .conteiner #cadastro,
+#paralogin:target ~ .conteiner #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+/* Efeito ao clicar no botão ( Cadastre-se ) 
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+
+}
+
+/*fadeInLeft
+@-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+     
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      
+      -webkit-transform: translateX(0);
+    }
+  }
+   
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+ 
+      transform: translateX(0);
+    }
+  }
+   
+  /*fadeOutLeft
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      
+      -webkit-transform: translateX(-20px);
+    }
+  }
+   
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      
+     
+      transform: translateX(-20px);
+    }
+  }
+*/
